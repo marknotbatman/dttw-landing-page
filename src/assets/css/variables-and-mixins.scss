@@ -1,0 +1,20 @@
+//Color Variables
+$black:#000;
+$white:#fff;
+
+
+//Fonts
+$sans:'Open Sans', sans-serif;
+$serif:'Libre Baskerville', serif;
+
+@mixin breakpoint($point) {
+	@if $point == medium {
+		@media screen and (min-width: 39.9376em) and (max-width: 64em) { @content ; }
+	}
+	@else if $point == small {
+		@media screen and (max-width: 39.9375em) { @content ; }
+	}
+	@else if $point == large {
+		@media screen and (min-width: 64.063em) { @content ; }
+	}
+}
