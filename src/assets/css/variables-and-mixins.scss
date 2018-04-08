@@ -1,11 +1,61 @@
 //Color Variables
 $black:#000;
 $white:#fff;
+$yellow:#FDC70C;
+$gray:#282828;
 
+.black {
+	color:$black;
+}
+.white {
+	color:$white;
+}
+.yellow {
+	color:$yellow;
+}
+.gray {
+	color:$gray;
+}
+.bg-black {
+	background-color:$black;
+}
+.bg-white {
+	background-color:$white;
+}
+.bg-yellow {
+	background-color:$yellow;
+}
+.bg-gray {
+	background-color:$gray;
+}
 
 //Fonts
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Open+Sans:400,600,700|Six+Caps');
 $sans:'Open Sans', sans-serif;
-$serif:'Libre Baskerville', serif;
+//400, 600, 700
+$krona:'Krona One', sans-serif;
+//400
+$six:'Six Caps', sans-serif;
+//400
+
+.center {
+	text-align:center;
+}
+.left {
+	text-align:left;
+}
+.right {
+	text-align:right;
+}
+.weight-400 {
+	font-weight:400;
+}
+.weight-600 {
+	font-weight:600;
+}
+.weight-700 {
+	font-weight:700;
+}
 
 @mixin breakpoint($point) {
 	@if $point == medium {
